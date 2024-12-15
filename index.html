@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFood</title>
+    <link rel="stylesheet" href="stylecss.css">
+
+    <!--Box Icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <a href="#" class="logo"><i class='bx bx-bowl-rice'></i>JFood</a>
+
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu"> Our Menu</a></li>
+            <li><a href="#gallery">Our Gallery</a></li>
+            <li><a href="#review">Our Customer</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            
+            <a href="#menu"><i class='bx bx-cart'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Meet, <span>Eat &</span> <br> Enjoy The true <br> <span>Japanese Taste</span></h1>
+            <a href="#menu" class="btn">Explore Menu<i class='bx bxs-right-arrow'></i></a>
+            <a href="Reservation.html" class="btn2">Book Seat Now</a>
+        </div>
+
+        <div class="home-img">
+            <img src="Aset/gambar4.png">
+        </div>
+    </section>
+
+    <!--Divider-->
+    <div class="divider">
+        <h2>The best <span class="span-dvd">Japanese Food</span> in <span class="span-dvd">Town</span></h2>
+    </div>
+
+    <!--Container-->
+    <section class="container">
+        <div class="container-box">
+            <div class="bx bxs-time-five" id="container-icon"></div>
+            <h3>01.00 pm - 09.00 pm</h3>
+            <a href="#">Working Hours</a>
+        </div>
+
+        <div class="container-box">
+            <div class="bx bxs-map" id="container-icon"></div>
+            <h3>Prapatan Praci KM90</h3>
+            <a href="#">Get Directions</a>
+        </div>
+
+        <div class="container-box">
+            <div class="bx bxs-phone-call" id="container-icon"></div>
+            <h3>(+62) 21 12345678</h3>
+            <a href="#">Call Us Now</a>
+        </div>
+    </section>
+
+    <!--About Us-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Aset/gambar2_small.png">
+        </div>
+
+        <div class="about-text">
+            <h2>Living well begins <br> with eating well.</h2>
+            <p>Welcome to JFood Restaurant, where we bring you a dining experience like no other. Founded in 2024, our mission is to serve delicious and thoughtfully crafted meals that celebrate the richness of Japanese cuisine. <br>
+                <br>At JFood Restaurant, every dish is prepared with the freshest ingredients, combined with a passion for culinary excellence. Whether you’re here for a casual meal, a family gathering, or a special celebration, we promise to make every visit memorable.
+                Our cozy ambiance and friendly service make us the perfect destination for food lovers seeking authentic flavors and a warm atmosphere. <br><br> Let us take you on a journey of taste and tradition because at JFood Restaurant, it’s more than just food; it’s an experience to savor.
+            </p>
+            <a href="#menu" class="btn">Explore Menu<i class='bx bxs-right-arrow'></i></a>
+        </div>
+    </section> 
+
+    <!--Our Menu-->
+    <section class="menu" id="menu">
+        <div class="middle-text">
+            <h4>Our Menu</h4>
+            <h2>Lets Check The Menu</h2>
+        </div>
+
+        <div class="container-menu">
+            <h1 class="title">Dishes</h1>
+            <div class="carousel-container">
+                <button class="button button-left" onclick="buttonLeft()">
+                    <i class='bx bx-left-arrow-alt' ></i>
+                </button>
+                <div class="carousel" id="carousel">
+                    <div class="card">
+                        <img src="Aset/ramen.png" alt="Ramen" />
+                        <div class="card-content">
+                            <h3>Ramen</h3>
+                            <p>Rp. 35.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/yakitori.png" alt="Yakitori" />
+                        <div class="card-content">
+                            <h3>Yakitori</h3>
+                            <p>Rp. 15.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/tempura.png" alt="Tempura" />
+                        <div class="card-content">
+                            <h3>Tempura</h3>
+                            <p>Rp. 15.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/takoyaki.png" alt="Takoyaki" />
+                        <div class="card-content">
+                            <h3>Takoyaki</h3>
+                            <p>Rp. 15.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/Sushi&Sashimi.png" alt="Sushi Sashimi" />
+                        <div class="card-content">
+                            <h3>Sushi & Sashimi</h3>
+                            <p>Rp. 40.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/Onigir.png" alt="Onigiri" />
+                        <div class="card-content">
+                            <h3>Onigiri</h3>
+                            <p>Rp. 10.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/CurryRice.png" alt="Curry Rice" />
+                        <div class="card-content">
+                            <h3>Curry Rice</h3>
+                            <p>Rp. 35.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/soba.png" alt="Soba Noodle" />
+                        <div class="card-content">
+                            <h3>Soba noodle</h3>
+                            <p>Rp. 30.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/udon.png" alt="Udon" />
+                        <div class="card-content">
+                            <h3>Udon</h3>
+                            <p>Rp. 35.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/miso-soup.png" alt="Miso soup" />
+                        <div class="card-content">
+                            <h3>Miso Soup</h3>
+                            <p>Rp. 20.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/gyoza.png" alt="Gyoza" />
+                        <div class="card-content">
+                            <h3>Gyoza</h3>
+                            <p>Rp. 15.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/natto.png" alt="Natto" />
+                        <div class="card-content">
+                            <h3>Natto</h3>
+                            <p>Rp. 10.000</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button button-right" onclick="buttonRight()">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </button>
+            </div>
+
+            <h1 class="title">Drink</h1>
+            <div class="carousel-container">
+                <button class="button button-left" onclick="buttonLeft2()">
+                    <i class='bx bx-left-arrow-alt' ></i>
+                </button>
+                <div class="carousel" id="carousel2">
+                    <div class="card">
+                        <img src="Aset/Iced Tea.png" alt="Iced Tea" />
+                        <div class="card-content">
+                            <h3>Iced Tea</h3>
+                            <p>Rp. 7.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/Milk Shake.png" alt="Milk Shake" />
+                        <div class="card-content">
+                            <h3>Milk Shake</h3>
+                            <p>Rp. 10.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/Fruit Tea.png" alt="Fruit Tea" />
+                        <div class="card-content">
+                            <h3>Fruit Tea</h3>
+                            <p>Rp. 10.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/Soda.png" alt="Soda" />
+                        <div class="card-content">
+                            <h3>Soda</h3>
+                            <p>Rp. 10.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/smoothie.png" alt="Smoothie" />
+                        <div class="card-content">
+                            <h3>Soda</h3>
+                            <p>Rp. 15.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/macchiato.png" alt="Macchiato" />
+                        <div class="card-content">
+                            <h3>Macchiato</h3>
+                            <p>Rp. 15.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/mojito.png" alt="Mojito" />
+                        <div class="card-content">
+                            <h3>Mojito</h3>
+                            <p>Rp. 10.000</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Aset/matcha-latte.png" alt="Matcha Latte" />
+                        <div class="card-content">
+                            <h3>Matcha Latte</h3>
+                            <p>Rp. 15.000</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="button button-right" onclick="buttonRight2()">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Order Pop Up -->
+     <div class="order">
+        <button class="order-button" onclick="showPopup()">Order Here</button>
+      </div>
+     <div class="overlay" id="overlay"></div>
+     <div class="popup" id="popup">
+       <div class="header-popup">
+         <h1>Food Ordering</h1>
+       </div>
+       <div class="menu-box">
+         <div class="dishes">
+           <h3>Dishes</h3>
+         </div>
+         <div class="menu-item">
+             <img src="Aset/ramen.png" alt="Ramen" />
+             <div class="menu-item-details">
+               <span><strong>Ramen</strong></span>
+               <span>Price: Rp. 35.000</span>
+             </div>
+             <input type="number" id="ramen-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/yakitori.png" alt="Yakitori" />
+             <div class="menu-item-details">
+               <span><strong>Yakitori</strong></span>
+               <span>Price: Rp. 15.000</span>
+             </div>
+             <input type="number" id="yakitori-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/tempura.png" alt="Tempura" />
+             <div class="menu-item-details">
+               <span><strong>Tempura</strong></span>
+               <span>Price: Rp. 15.000</span>
+             </div>
+             <input type="number" id="tempura-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/takoyaki.png" alt="Takoyaki" />
+             <div class="menu-item-details">
+               <span><strong>Takoyaki</strong></span>
+               <span>Price: Rp. 15.000</span>
+             </div>
+             <input type="number" id="takoyaki-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/Sushi&Sashimi.png" alt="Sushi and Sashimi" />
+             <div class="menu-item-details">
+               <span><strong>Sushi & Sashimi</strong></span>
+               <span>Price: Rp. 40.000</span>
+             </div>
+             <input type="number" id="sushi-sashimi-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/Onigir.png" alt="Onigiri" />
+             <div class="menu-item-details">
+               <span><strong>Onigiri</strong></span>
+               <span>Price: Rp. 10.000</span>
+             </div>
+             <input type="number" id="onigiri-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/CurryRice.png" alt="CurryRice" />
+             <div class="menu-item-details">
+               <span><strong>Curry Rice</strong></span>
+               <span>Price: Rp. 35.000</span>
+             </div>
+             <input type="number" id="curry-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/soba.png" alt="Soba" />
+             <div class="menu-item-details">
+               <span><strong>Soba</strong></span>
+               <span>Price: Rp. 30.000</span>
+             </div>
+             <input type="number" id="soba-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/udon.png" alt="udon" />
+             <div class="menu-item-details">
+               <span><strong>Udon</strong></span>
+               <span>Price: Rp. 35.000</span>
+             </div>
+             <input type="number" id="udon-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/miso-soup.png" alt="miso-soup" />
+             <div class="menu-item-details">
+               <span><strong>Miso Soup</strong></span>
+               <span>Price: Rp. 20.000</span>
+             </div>
+             <input type="number" id="miso-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/gyoza.png" alt="gyoza" />
+             <div class="menu-item-details">
+               <span><strong>Gyoza</strong></span>
+               <span>Price: Rp. 15.000</span>
+             </div>
+             <input type="number" id="gyoza-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/natto.png" alt="natto" />
+             <div class="menu-item-details">
+               <span><strong>Natto</strong></span>
+               <span>Price: Rp. 10.000</span>
+             </div>
+             <input type="number" id="natto-quantity" min="0" value="0" />
+           </div>
+ 
+           <div class="dishes">
+             <h3>Drink</h3>
+           </div>
+ 
+           <div class="menu-item">
+             <img src="Aset/Iced Tea.png" alt="IcedTea" />
+             <div class="menu-item-details">
+               <span><strong>Iced Tea</strong></span>
+               <span>Price: Rp. 7.000</span>
+             </div>
+             <input type="number" id="tea-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/Milk Shake.png" alt="MilkShake" />
+             <div class="menu-item-details">
+               <span><strong>Milk Shake</strong></span>
+               <span>Price: Rp. 10.000</span>
+             </div>
+             <input type="number" id="MilkShake-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/Fruit Tea.png" alt="FruotTea" />
+             <div class="menu-item-details">
+               <span><strong>Fruit Tea</strong></span>
+               <span>Price: Rp. 10.000</span>
+             </div>
+             <input type="number" id="FruitTea-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/Soda.png" alt="Soda" />
+             <div class="menu-item-details">
+               <span><strong>Soda</strong></span>
+               <span>Price: Rp. 10.000</span>
+             </div>
+             <input type="number" id="soda-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/smoothie.png" alt="Smoothie" />
+             <div class="menu-item-details">
+               <span><strong>Smoothie</strong></span>
+               <span>Price: Rp. 10.000</span>
+             </div>
+             <input type="number" id="smoothie-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/macchiato.png" alt="macchiato" />
+             <div class="menu-item-details">
+               <span><strong>Macchiato</strong></span>
+               <span>Price: Rp. 15.000</span>
+             </div>
+             <input type="number" id="machiato-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/mojito.png" alt="mojito" />
+             <div class="menu-item-details">
+               <span><strong>Mojito</strong></span>
+               <span>Price: Rp. 10.000</span>
+             </div>
+             <input type="number" id="mojito-quantity" min="0" value="0" />
+           </div>
+           <div class="menu-item">
+             <img src="Aset/matcha-latte.png" alt="matcha-latte" />
+             <div class="menu-item-details">
+               <span><strong>Matcha Latte</strong></span>
+               <span>Price: Rp. 15.000</span>
+             </div>
+             <input type="number" id="matcha-quantity" min="0" value="0" />
+           </div>
+           
+         </div>
+         <div class="placeOrder">
+           <button onclick="placeOrder()">Place Order</button>
+           <button onclick="closePopup()">Close</button>
+         </div>
+           </div>
+       </div>
+       
+    </section>
+
+        <!--Our Gallery-->
+        <section class="gallery" id="gallery">
+            <div class="middle-text">
+                <h4>Our Gallery</h4>
+                <h2>Discover the Moments We’ve Captured</h2>
+            </div>
+            
+            <div class="gallery-container">
+                <!-- Gallery Wrapper -->
+                <div class="gallery-wrapper" id="galleryWrapper">
+                    <div class="gallery-item">
+                        <img src="Aset/yakitori.png" alt="Gourmet Appetizer">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Aset/udon.png" alt="Signature Main Course">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Aset/tempura.png" alt="Artisan Dessert">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Aset/takoyaki.png" alt="Fresh Seafood">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Aset/Sushi&Sashimi.png" alt="Seasonal Special">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Aset/soba.png" alt="Chef's Creation">
+                    </div>
+                    </div>
+                <div>
+                    <button class="gallery-arrow left" id="prevArrow">&#10094;</button>
+                    <button class="gallery-arrow right" id="nextArrow">&#10095;</button>
+                </div>
+            </div>
+    
+        </section>
+
+    <!--Our Customer-->
+    <section class="review" id="review">
+        <div class="middle-text">
+            <h4>Our Customer</h4>
+            <h2>Client Review About Our Food</h2>
+        </div>
+
+        <div class="review-content">
+            <div class="box">
+                <p>Pilihan makanan Japanese di restoran ini sangat komplit </p>
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="Aset/emo.png" alt="Orang1">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Reza Sri Wibowo</h4>
+                        <h5>Deadliner</h5>
+                        <div class="ratings">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star-half'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <p>Tempatnya nyaman, bersih, dan pegawainya juga sangat ramah</p>
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="Aset/CG Adidas.jpg" alt="Orang2">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Ahmad Fahruri</h4>
+                        <h5>Food Vlogger</h5>
+                        <div class="ratings">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <p>Restorannya sangat nyaman sekali, dan makanannya juga sangat bersih </p>
+                <div class="in-box">
+                    <div class="bx-img">
+                        <img src="Aset/bnh.jpg">
+                    </div>
+                    <div class="bxx-text">
+                        <h4>Yusup Susilo</h4>
+                        <h5>Teacher</h5>
+                        <div class="ratings">
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                            <a href="#"><i class='bx bxs-star'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="divider">
+        <h2>Come <span class="span-dvd">Visit Us and Enjoy</span> Your <span class="span-dvd">Best Meal!!!</span></h2>
+      </div>
+      
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>The Best Japanese Restaurant in Town</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Important Link</h2>
+                <ul>
+                    <li><a href="#">Search Domain</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Our Restaurant</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><strong>Address :</strong> Prapatan Praci Ngetan</p>
+                <p><strong>Phone :</strong> +62 88 888 999</p>
+                <p><strong>Email :</strong> <a href="mailto:jepang@gmail.com" class="email">jepang@gmail.com</a></p>
+            </div>
+            <div class="footer-section newsletter">
+                <h2>Newsletter</h2>
+                <p>Fill in the email below to get information from us</p>
+                <form>
+                    <input type="email" placeholder="Email Address..." required>
+                    <button type="submit" class="arrw"><i class='bx bxs-right-arrow' ></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright ©2024 All rights reserved | By Ardika and Widhi</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+    </footer>
+
+        <!--Scroll To Top-->
+        <a href="#" class="scroll">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--Link to js-->
+        <script src=script.js></script>
+
+</body>
+
+</html>
